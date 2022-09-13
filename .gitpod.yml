@@ -6,7 +6,7 @@ tasks:
   - name: install Firefox
     init: sudo apt update && sudo apt upgrade -y && sudo apt install firefox -y && clear && echo "Firefox Is Installed." # runs during prebuild
   - name: install Eclipse
-    init: curl -L https://www.mirrorservice.org/sites/download.eclipse.org/eclipseMirror/technology/epp/downloads/release/2022-09/R/eclipse-java-2022-09-R-linux-gtk-x86_64.tar.gz -o /home/gitpod/Downloads/eclipse.tar.gz
+    init: mkdir -p /home/gitpod/Downloads && curl -L https://www.mirrorservice.org/sites/download.eclipse.org/eclipseMirror/technology/epp/downloads/release/2022-09/R/eclipse-java-2022-09-R-linux-gtk-x86_64.tar.gz -o /home/gitpod/Downloads/eclipse.tar.gz
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
   - port: 6080
