@@ -8,7 +8,7 @@ tasks:
   - name: install Eclipse
     init: mkdir -p /home/gitpod/Downloads && curl -L https://www.mirrorservice.org/sites/download.eclipse.org/eclipseMirror/technology/epp/downloads/release/2022-09/R/eclipse-java-2022-09-R-linux-gtk-x86_64.tar.gz -o /home/gitpod/Downloads/eclipse.tar.gz && tar -xvzf eclipse.tar.gz -C /home/gitpod/Downloads
   - name: Start Eclipse
-    command: /home/gitpod/Downloads/eclipse/eclipse
+    command: sleep 30 && /home/gitpod/Downloads/eclipse/eclipse
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
   - port: 6080
