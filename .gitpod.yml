@@ -8,8 +8,9 @@ tasks:
   - name: install Eclipse
     init: |
       mkdir -p /home/gitpod/Downloads &&
-      curl -L https://www.mirrorservice.org/sites/download.eclipse.org/eclipseMirror/technology/epp/downloads/release/2022-09/R/eclipse-java-2022-09-R-linux-gtk-x86_64.tar.gz -o /home/gitpod/Downloads/eclipse.tar.gz &&
-      tar -xvzf /home/gitpod/Downloads/eclipse.tar.gz -C /home/gitpod/Downloads &&
+      curl https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/integration/12.0.2.0-ACE-LINUX64-DEVELOPER.tar.gz -o eai.tar.gz
+#      curl -L https://www.mirrorservice.org/sites/download.eclipse.org/eclipseMirror/technology/epp/downloads/release/2022-09/R/eclipse-java-2022-09-R-linux-gtk-x86_64.tar.gz -o /home/gitpod/Downloads/eclipse.tar.gz &&
+#      tar -xvzf /home/gitpod/Downloads/eclipse.tar.gz -C /home/gitpod/Downloads &&
       gp sync-done inst
   - name: Start Eclipse
     command: |
